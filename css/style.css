@@ -91,8 +91,10 @@ h1.h1__hidden {
 .logo__container {
   display: block;
   position: relative;
-  width: 18.75rem;
-  height: 18.75rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   margin: 1.5rem;
   cursor: pointer;
   overflow: hidden;
@@ -108,13 +110,13 @@ h1.h1__hidden {
 }
 
 .logo__img-wrap {
-  width: 18.75rem;
-  height: 18.75rem;
+  width: 100%;
+  height: 100%;
 }
 
 .logo__img-wrap .logo__image {  
-  width: 18.75rem;
-  height: 18.75rem;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   transition: .5s ease;
 }
@@ -128,8 +130,8 @@ h1.h1__hidden {
   justify-content: center;
   top: 0;
   left: 0;
-  width: 18.75rem;
-  height: 18.75rem;
+  width: 100%;
+  height: 100%;
   background: var(--text2-cyan);
   opacity: .6;
   color: var(--white);
