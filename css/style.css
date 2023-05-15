@@ -1,0 +1,197 @@
+/*_____ GLOBAL STYLES _____*/
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  justify-content: center;
+  align-items: end;
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 1.75rem;
+  font-family: 'Outfit', sans-serif;
+  font-size: var(--font-size-default);
+  color: var(--text1-softblue);
+  background: var(--main-bg-vvdkblue);
+}
+
+main {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  max-height: 100vh;
+  margin-bottom: 0.5rem;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+
+/*_____ GLOBAL FLEX__GROUP _____*/
+.flex__group {
+  display: flex;
+}
+
+
+/*_____ WHOLE CARD FLEX COLUMN _____*/
+
+.card {
+  flex-direction: column;
+  max-width: 21.875rem;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  border-radius: 1.25rem;
+  background-color: var(--card-bg-vdkblue);
+  -webkit-box-shadow: 3px 10px 20px 2px var(--box-shadow);
+  box-shadow: 0px 40px 15px 1px var(--box-shadow);
+}
+
+
+/*_____ HIDDEN SECTION H1 _____*/
+h1.h1__hidden {
+  display: none;
+}
+
+
+/*_____ NFT LOGO IMAGE _____*/
+
+img.nft__logo {
+  margin: 1.5rem;
+  max-width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+
+img.nft__logo:hover {
+  color: var(--text2-cyan);
+  /*+++ ADD CORRECT HOVER MASK WITH SVG VIEW ICON*/
+  cursor: pointer;
+}
+
+
+/*_____ NFT NAME TITLE _____*/
+
+h2.nft__name {
+  margin: 0 1.5rem 1.25rem 1.5rem;
+  font-size: var(--font-size-h2-nft);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: var(--white);
+}
+
+h2.nft__name:hover {
+  cursor: pointer;
+  color: var(--text2-cyan);
+}
+
+
+/*_____ NFT SUMMARY PARAGRAPH _____*/
+
+p.summary {
+  margin: 0 1.5rem 1.5rem 1.5rem;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+
+/*_____ COST & DAYS LEFT FLEX GROUP _____*/
+
+/*### COST & DAYS PARENT ###*/
+.flex__group.cost-and-days {
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1.5rem 1.5rem 1.5rem;
+}
+
+/*### COST SIBLING (eth svg + cost H3) ###*/
+.flex__group.cost {
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text2-cyan)
+}
+
+.eth__icon { /*+++ eth svg icon */
+}
+
+h3.cost__eth {
+  font-size: var(--font-size-h3-cost);
+  font-weight: 600;
+}
+
+/*### DAYS SIBLING (clock svg + days left P) ###*/ 
+.flex__group.days {
+  align-items: center;
+  gap: 0.4rem;
+  font-size: var(--font-size-default);
+  font-weight: 400;
+}
+
+.clock__icon { /*+++ clock svg icon */
+}
+
+
+
+/*_____ CREATOR FLEX GROUP _____*/
+
+/*### AVATAR & CREATOR NAME LINK */
+.flex__group.creator {
+  align-items: center;
+  margin: 0 1.5rem 1.5rem 1.5rem;
+  padding-top: .875rem;
+  font-size: var(--font-size-creator);
+  font-weight: 300;
+  border-top: 1px solid var(--line-dkblue);
+}
+
+img.creator__avatar {
+  width: 2.25rem;
+  height: 2.25rem;
+  margin-right: .9375rem;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+a.name {
+  color: var(--white);
+}
+
+a.name:hover {
+  cursor: pointer;
+  color: var(--text2-cyan);
+}
+
+
+/*_____ FOOTER _____*/
+
+footer.attribution {
+  font-size: var(--font-size-footer);
+  text-align: center;
+  color: var(--white);
+}
+
+.attribution a:hover {
+  color: var(--text2-cyan);
+}
+
+.attribution a:visited {
+  color: var(--link-visited);
+}

@@ -1,0 +1,17 @@
+:root {
+
+  --text1-softblue: hsl(215, 51%, 70%);
+  --text2-cyan: hsl(178, 100%, 50%);
+  --main-bg-vvdkblue: hsl(217, 54%, 11%);
+  --card-bg-vdkblue: hsl(216, 50%, 16%);
+  --line-dkblue: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --link-visited: hsl(350, 100%, 88%);
+  --box-shadow: hsl(220, 54%, 11%);
+
+  --font-size-default: 1rem;
+  --font-size-h2-nft: 1.3125rem;
+  --font-size-h3-cost: 0.9375rem;
+  --font-size-creator: 0.9375rem;
+  --font-size-footer: 0.6875rem;
+}

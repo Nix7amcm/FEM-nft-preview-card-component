@@ -1,31 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+    <title>Frontend Mentor | NFT preview card component</title>
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="colors.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/colors.css">
 
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(0, 0%, 100%); }
-  </style>
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
+  </head>
+
   <body>
 
-    Equilibrium #3429
+    <main>
 
-    Our Equilibrium collection promotes balance and calm.
+      <section class="card flex__group">
 
-    0.041 ETH
-    3 days left
+        <h1 class="h1__hidden">NFT Card</h1>
 
-    Creation of Jules Wyvern
+        <img
+          src="images/image-equilibrium.jpg"
+          alt="NFT logo Equilibrium"
+          class="nft__logo"
+        >
+
+        <h2 class="nft__name">
+          Equilibrium #3429
+        </h2>
+
+        <p class="summary">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+
+        <div class="flex__group cost-and-days">
+          <div class="flex__group cost">
+            <svg
+              width="11"
+              height="18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
+                fill="#00FFF8"
+              />
+            </svg>
+
+            <h3 class="cost__eth">
+              0.041 ETH
+            </h3>
+          </div>
+
+          <div class="flex__group days">
+            <svg
+              width="17"
+              height="17"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z"
+                fill="#8BACD9"
+              />
+            </svg>
+
+            3 days left
+
+          </div>
+        </div>
+
+        <div class="flex__group creator">
+          <img
+            src="images/image-avatar.png"
+            alt="NFT creator avatar"
+            class="creator__avatar"
+          >
+
+          Creation of
+
+          <a class="name">
+            &nbspJules Wyvern
+          </a>
+
+        </div>
+
+      </section>
+
+    </main>
 
 
 
@@ -40,5 +106,7 @@
       >Nix7amcm⚡</a>
       .
     </footer>
+
   </body>
+
 </html>
