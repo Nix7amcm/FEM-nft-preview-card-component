@@ -42,4 +42,6 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ## Acknowledgments
 
-Thanks to [Figma](https://www.figma.com)! It's so simple to set up a project and learn to use the tools. It definitely made the project easier, with not having to estimate everything! 😃
+- Thanks to [Figma](https://www.figma.com)! It's so simple to set up a project and learn to use the tools. It definitely made the project easier, with not having to estimate everything! 😃
+
+- Also a shoutout to [frontend practice](https://www.youtube.com/@frontendpractice)! Who's [video](https://www.youtube.com/watch?v=Jf-hNuvrLOY) I watched and code I followed to learn how to apply the hover effect to the NFT logo image. Really easy to follow and a massive help! Thanks! 😃
