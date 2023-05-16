@@ -10,7 +10,8 @@
 
   --font-size-default: 1.125rem;
   --font-size-h2-nft: 1.375rem;
-  --font-size-h3-cost: var(--font-size-default);
-  --font-size-creator: var(--font-size-default);
+  --font-size-h3-cost: 1rem;
+  --font-size-days: 1rem;
+  --font-size-creator: 1rem;
   --font-size-footer: 0.6875rem;
 }

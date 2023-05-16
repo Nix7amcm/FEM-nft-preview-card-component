@@ -207,7 +207,7 @@ h3.cost {
 .flex__group.days {
   align-items: center;
   gap: 0.4rem;
-  font-size: var(--font-size-default);
+  font-size: var(--font-size-days);
   font-weight: 400;
 }
 
@@ -224,7 +224,7 @@ h3.cost {
   margin: 0 1.5rem 1.5rem 1.5rem;
   padding-top: .875rem;
   font-size: var(--font-size-creator);
-  font-weight: 300;
+  font-weight: 400;
   border-top: 1px solid var(--line-dkblue);
 }
 
