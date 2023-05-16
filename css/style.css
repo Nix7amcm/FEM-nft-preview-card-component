@@ -1,3 +1,5 @@
+@import url(colors-fonts.css);
+
 /*_____ GLOBAL STYLES _____*/
 
 html {
@@ -19,9 +21,8 @@ html {
 body {
   display: grid;
   justify-content: center;
-  align-items: end;
+  align-items: start;
   min-height: 100vh;
-  min-width: 100vw;
   padding: 0.5rem;
   font-family: 'Outfit', sans-serif;
   font-size: var(--font-size-default);
@@ -33,13 +34,12 @@ main {
   display: grid;
   justify-content: center;
   align-content: center;
-  width: 100%;
   max-height: 100vh;
-  margin-bottom: 0.5rem;
 }
 
 a:link {
   color: var(--white);
+  text-decoration: none;
 }
 
 a:visited {
@@ -64,7 +64,6 @@ svg {
   display: flex;
 }
 
-
 /*_____ WHOLE CARD FLEX COLUMN _____*/
 
 .card {
@@ -79,11 +78,24 @@ svg {
 }
 
 
-/*_____ HIDDEN SECTION H1 _____*/
-h1.h1__hidden {
-  display: none;
+/*_____ HIDDEN H1 _____*/
+/*@ https://www.a11yproject.com/posts/how-to-hide-content/ */
+
+.h1__hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
+h1:focus,
+.h1__hidden {
+  height: 1px;
+  color: var(--main-bg-vvdkblue);
+}
 
 /*_____ NFT LOGO IMAGE _____*/
 /*@ @Frontend Practice: https://www.youtube.com/watch?v=Jf-hNuvrLOY */
@@ -91,21 +103,19 @@ h1.h1__hidden {
 .logo__container {
   display: block;
   position: relative;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   margin: 1.5rem;
   cursor: pointer;
   overflow: hidden;
   border-radius: 0.5rem;
 }
 
-.logo__container:hover .logo__svg-wrap {
+.logo__container:hover .logo__svg-wrap,
+.logo__container:focus .logo__svg-wrap {
   visibility: visible;
 }
 
-.logo__container:hover .logo__image {
+.logo__container:hover .logo__image,
+.logo__container:focus .logo__image {
   transform: scale(1.1);
 }
 
@@ -114,7 +124,7 @@ h1.h1__hidden {
   height: 100%;
 }
 
-.logo__img-wrap .logo__image {  
+.logo__img-wrap .logo__image {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -148,12 +158,15 @@ h2.nft__name {
   letter-spacing: 0.02em;
   text-align: left;
   color: var(--white);
+  text-decoration: none;
 }
 
-h2.nft__name:hover {
+h2.nft__name:hover,
+h2.nft__name:focus {
   cursor: pointer;
   color: var(--text2-cyan);
 }
+
 
 
 /*_____ NFT SUMMARY PARAGRAPH _____*/
@@ -181,15 +194,16 @@ p.summary {
   color: var(--text2-cyan)
 }
 
-.eth__icon { /*--- eth svg icon */
+.eth__icon {
+  /*--- eth svg icon */
 }
 
-h3.cost__eth {
+h3.cost {
   font-size: var(--font-size-h3-cost);
   font-weight: 600;
 }
 
-/*### DAYS SIBLING (clock svg + days left P) ###*/ 
+/*### DAYS SIBLING (clock svg + days left P) ###*/
 .flex__group.days {
   align-items: center;
   gap: 0.4rem;
@@ -197,7 +211,8 @@ h3.cost__eth {
   font-weight: 400;
 }
 
-.clock__icon { /*--- clock svg icon */
+.clock__icon {
+  /*--- clock svg icon */
 }
 
 
@@ -221,14 +236,9 @@ img.creator__avatar {
   border-radius: 50%;
 }
 
-a.name {
+.name {
   text-decoration: none;
   color: var(--white);
-}
-
-a.name:hover {
-  cursor: pointer;
-  color: var(--text2-cyan);
 }
 
 
@@ -240,3 +250,6 @@ footer.attribution {
   color: var(--white);
 }
 
+footer.attribution a:link {
+  text-decoration: underline;
+}
